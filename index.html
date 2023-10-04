@@ -7,6 +7,146 @@
     <title>Document</title>
 </head>
 <body>
-    
-</body>
+    <div class="container">
+      <div class="title">
+        <h1>Formularz zakupu samochodu osobowego</h1>
+      </div>
+      <form action="#">
+        <fieldset>
+          <legend>Dane osobowe</legend>
+          <label for="firstName"
+            >Imię:
+            <input
+              type="text"
+              name="firstName"
+              id="firstName"
+              placeholder="Dawid"
+            />
+          </label>
+          <label for="lastName"
+            >Nazwisko:
+            <input
+              type="text"
+              name="lastName"
+              id="lastName"
+              placeholder="Kowalski"
+            />
+          </label>
+
+          <label for="age">
+            Wiek:
+            <input
+              type="number"
+              name="age"
+              id="age"
+              min="18"
+              max="110"
+              placeholder="18"
+            />
+          </label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Płeć</legend>
+          <label for="woman"
+            >Kobieta:
+            <input type="radio" name="gender" id="woman" />
+          </label>
+          <label for="man"
+            >Mężczyzna:
+            <input type="radio" name="gender" id="man" checked />
+          </label>
+        </fieldset>
+        <fieldset>
+          <legend>Marka i model auta</legend>
+          <label for="opt">
+            <select name="opt" id="opt" size="5" multiple>
+              <optgroup label="BMW">
+                <option value="50000">X7</option>
+                <option value="70000">X6</option>
+                <option value="25000">E46</option>
+              </optgroup>
+              <optgroup label="Dodge">
+                <option value="50000">Charger</option>
+                <option value="90000">Chalanger</option>
+                <option value="130000">Ram 1500</option>
+              </optgroup>
+              <optgroup label="Ford">
+                <option value="90000">Explorer</option>
+                <option value="12000">Fiesta</option>
+                <option value="120000">Range Raptor</option>
+              </optgroup>
+            </select>
+          </label>
+        </fieldset>
+        <fieldset>
+          <legend>Rodzaj silnika</legend>
+          <label for="fuel_benz"
+            >Benzyna:
+            <input type="radio" name="fuel_type" id="fuel_benz" checked />
+          </label>
+          <label for="fuel_die"
+            >Diesel:
+            <input type="radio" name="fuel_type" id="fuel_die" />
+          </label>
+          <label for="fuel_gaz"
+            >Gaz:
+            <input type="radio" name="fuel_type" id="fuel_gaz" />
+          </label>
+          <label for="fuel_hyb"
+            >Hybryda:
+            <input type="radio" name="fuel_type" id="fuel_hyb" />
+          </label>
+          <label for="fuel_elec"
+            >Elektryk:
+            <input type="radio" name="fuel_type" id="fuel_elec" />
+          </label>
+        </fieldset>
+        <fieldset>
+          <legend>Efekty wizualne + dodatki</legend>
+          <label for="carcolor">
+            Kolor auta:
+            <input type="color" name="carcolor" id="carcolor" value="#ff0000" />
+          </label>
+          <label for="carcolorins">
+            Kolor wnętrza:
+            <input
+              type="color"
+              name="carcolorins"
+              id="carcolorins"
+              value="#ffffff"
+            />
+          </label>
+          <p></p>
+          <label for="usb_charg">
+            Porty USB: <input type="checkbox" name="visual" id="usb_charg" />
+          </label>
+          <label for="szyberdach">
+            Szyberdach: <input type="checkbox" name="visual" id="szyberdach" />
+          </label>
+          <label for="tint_glass">
+            Przyciemnione szyby:
+            <input type="checkbox" name="visual" id="tint_glass" />
+          </label>
+          <label for="hot_chair">
+            Podgrzewane siedzenia:
+            <input type="checkbox" name="visual" id="hot_chair" />
+          </label>
+          <p></p>
+          <label for="livery">
+            Okleina:
+            <input type="checkbox" name="visual" id="livery" />
+          </label>
+          <label for="file">
+            Wygląd/Wzór naklejki: <input type="file" name="file" id="file" />
+          </label>
+          <p></p>
+          <label>
+            <input type="submit" value="Zatwierdź" />
+            <input type="reset" value="Wyczyść Formularz" />
+          </label>
+        </fieldset>
+      </form>
+    </div>
+  </body>
 </html>
