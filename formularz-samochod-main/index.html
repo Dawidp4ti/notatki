@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Formularz Samochodowy</title>
+  </head>
+  <body>
+    <form>
+      <div class="container">
+        <div class="head">
+          <!-- <div class="salon"><h1>★ Salon Samochodowy ★</h1></div> -->
+          <div class="dane">
+            <fieldset>
+              <legend>Dane Kupującego</legend>
+              <label for="fName" class="blok">
+                Imie:
+                <input
+                  type="text"
+                  name="fName"
+                  id="fName"
+                  placeholder="Marian"
+                  required
+                />
+              </label>
+              <label for="lName" class="blok">
+                Nazwisko:
+                <input
+                  type="text"
+                  name="lName"
+                  id="lName"
+                  placeholder="Kowalski"
+                  required
+                />
+              </label>
+              <label for="bdate">Data urodzenia: <input type="date" required/> </label>
+            </fieldset>
+            <fieldset>
+              <legend>Płeć</legend>
+              <label for="man" class="blok">
+                <input type="radio" name="gender" id="man" value="man" />
+                Mężczyzna
+              </label>
+              <label for="woman" class="blok">
+                <input type="radio" name="gender" id="woman" value="woman" />
+                Kobieta
+              </label>
+            </fieldset>
+          </div>
+          <div class="logowanie">
+            <fieldset>
+              <legend>Dane kontaktowe</legend>
+              <label for="tel" class="blok">
+                Telefon:
+                <input type="tel" name="tel" id="tel" placeholder="+48" required/>
+              </label>
+              <label for="mail" class="blok">
+                Email:
+                <input
+                  type="email"
+                  name="mail"
+                  id="mail"
+                  placeholder="kowalski@gmail.com"
+                />
+              </label>
+              <label for="addres" class="blok">
+                Addres:
+                <input
+                  type="text"
+                  name="addres"
+                  id="addres"
+                  placeholder="Knurów Sezamkowa 12" 
+                  required
+                />
+              </label>
+            </fieldset>
+            <fieldset>
+              <legend>Logowanie</legend>
+              <label for="log" class="blok">
+                Login:
+                <input type="text" name="log" id="log" placeholder="Login" />
+              </label>
+              <label for="pas" class="blok">
+                Hasło:
+                <input type="password" name="pas" id="pas" placeholder="1234" />
+              </label>
+            </fieldset>
+          </div>
+        </div>
+        <div class="main">
+          <fieldset>
+            <legend>Informacje o pojeździe</legend>
+            <!-- <fieldset>
+              <legend>Marka oraz rodzaj</legend> -->
+            <label for="opt_model" class="blok">
+              <select name="opt_model" id="opt_model">
+                <option value="none" class="none">Brak</option>
+                <optgroup label="BMW">
+                  <option value="">1</option>
+                  <option value="">2</option>
+                  <option value="">3</option>
+                  <option value="">4</option>
+                </optgroup>
+                <optgroup label="Dodge">
+                  <option value="">1</option>
+                  <option value="">2</option>
+                  <option value="">3</option>
+                  <option value="">4</option>
+                </optgroup>
+                <optgroup label="Ford">
+                  <option value="">1</option>
+                  <option value="">2</option>
+                  <option value="">3</option>
+                  <option value="">4</option>
+                </optgroup>
+                <optgroup label="Mercedes">
+                  <option value="">1</option>
+                  <option value="">2</option>
+                  <option value="">3</option>
+                  <option value="">4</option>
+                </optgroup>
+              </select>
+            </label>
+          </fieldset>
+          <fieldset>
+            <legend>silnik moc/rodzaj</legend>
+            <label for="opt_eng" class="blok">
+              <select name="opt_eng" id="opt_eng">
+                <option value="none" class="none">Brak</option>
+                <option value="">V 6</option>
+                <option value="">V 8</option>
+                <option value="">V 10</option>
+                <option value="">V 12</option>
+              </select>
+            </label>
+            <div class="engine_r">
+              <label for="ben">
+                Benzyna: <input type="radio" name="engine_r" id="ben" />
+              </label>
+              <label for="dis">
+                Diesel: <input type="radio" name="engine_r" id="dis" />
+              </label>
+              <label for="ele">
+                Elektryk: <input type="radio" name="engine_r" id="ele" />
+              </label>
+              <label for="hyb">
+                Hybryda: <input type="radio" name="engine_r" id="hyb" />
+              </label>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Kolor</legend>
+            <div class="engine_r">
+              <label for="exterior">
+                Lakier: <input type="color" name="exterior" id="exterior" />
+              </label>
+              <label for="interior">
+                Wnętrze:
+                <input type="color" name="interior" id="interior" />
+              </label>
+              <label for="kolpaki">
+                Kołpaki:
+                <input type="color" name="kolpaki" id="kolpaki" />
+              </label>
+            </div>
+          </fieldset>
+          <fieldset class="wypo">
+            <legend>Wyposażenie</legend>
+            <label for="wspomaganie" class="test">
+                Wspomaganie parkowania: <input type="checkbox" name="wyp" id="wspomaganie">
+            </label>
+            <label for="drive_assist" class="test">
+                Pakiet Drive Assist: <input type="checkbox" name="wyp" id="drive_assist">
+            </label>
+            <label for="tempomat" class="test">
+                Tempomat: <input type="checkbox" name="wyp" id="tempomat">
+            </label>
+            <label for="klimatyzacja" class="test">
+                Klimatyzacja: <input type="checkbox" name="wyp" id="klimatyzacja">
+            </label>
+            <label for="navigation" class="test">
+                Nawigacja: <input type="checkbox" name="wyp" id="navigation">
+            </label>
+            <label for="ports_usb" class="test">
+                Porty USB: <input type="checkbox" name="wyp" id="ports_usb">
+            </label>
+            <label for="sys_sos" class="test">
+                System SOS: <input type="checkbox" name="wyp" id="sys_sos">
+            </label>
+            <label for="szyberdach" class="test">
+                Szyberdach: <input type="checkbox" name="wyp" id="szyberdach">
+            </label>
+            <label for="heat_seats" class="test">
+                Ogrzewane siedzenia: <input type="checkbox" name="wyp" id="heat_seats">
+            </label>
+          </fieldset>
+        </div>
+          
+          <!-- </fieldset> -->
+          <div class="end">
+            <fieldset class="end_1">
+                <legend>Potwierdzenie</legend>
+                <div class="end_2">
+                    <div class="end_1">
+                        <label for="com">
+                            <textarea name="com" id="com" cols="73" rows="6" placeholder="Wpisz swoje uwagi">
+
+                            </textarea>
+                        </label>
+                    </div>
+                </div>
+                <div class="end_3">
+                    <div class="end_1">
+                        <label for="a">
+                            Liczba Egzemplarzy<input type="range" id="a" name="a" min="1" max="5" step="1" oninput="result.value=a.value"/>
+                            <output name="result" for="a">3</output>
+                        </label>
+                    </div>
+                    <label for="sub">
+                        <input type="submit" id="sub" value="Prześlij zamówienie">
+                    </label>
+                    <label for="res">
+                        <input type="reset" id="res" value="Reset">
+                    </label>
+                </div>
+            </fieldset>
+        </div>
+        </div>
+      </div>
+    </form>
+  </body>
+</html>

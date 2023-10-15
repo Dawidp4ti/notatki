@@ -1,0 +1,140 @@
+body {
+  display: flex;
+  justify-content: center;
+  background-image: url("img.jpg");
+}
+
+
+
+.container {
+  width: 609px;
+  height: 97vh;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0.2rem;
+}
+
+.head {
+  border: 3px;
+  border-style: solid;
+  border-radius: 10px;
+  width: 100%;
+  background-image: linear-gradient(to bottom right, rgb(0, 255, 136), rgb(207, 207, 21));
+  display: flex;
+  flex-wrap: wrap;
+  height: fit-content;
+  padding: 8px;
+}
+
+.main {
+  border: 3px;
+  border-style: solid;
+  border-radius: 10px;
+  width: 100%;
+  background-image: linear-gradient(to bottom right, rgb(0, 255, 221), rgb(164, 164, 27));
+  height: fit-content;
+  padding: 8px;
+}
+
+.end {
+  border: 3px;
+  border-style: solid;
+  border-radius: 10px;
+  width: 100%;
+  background-image: linear-gradient(to bottom right, rgb(0, 255, 136), rgb(207, 207, 21));
+  height: fit-content;
+  padding: 8px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+label {
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.blok {
+  display: block;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.dane,
+.logowanie {
+  width: 50%;
+}
+
+legend {
+  text-align: center;
+  font-weight: bolder;
+  font-size: 1rem;
+}
+
+fieldset {
+  border-style: solid;
+  border-radius: 10px;
+}
+
+.salon {
+  width: 100%;
+  text-align: center;
+}
+
+select {
+  width: 100%;
+  text-align: center;
+  color: black;
+  background-color: rgb(68, 204, 50);
+}
+
+optgroup {
+  text-align: center;
+}
+option {
+  text-align: left;
+}
+
+.none {
+  text-align: center;
+}
+
+.engine_r {
+  margin-top: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-items: center;
+  justify-content: space-around;
+}
+
+.wypo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.test {
+  width: 236.5px;
+}
+
+.end_1 {
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+.end_2 {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-items: center;
+  justify-content: space-around;
+}
+
+.end_3 {
+  width: 100%;
+  text-align: center;
+}
+
+input {
+  color: black;
+  background-color: rgb(68, 204, 50);
+}
